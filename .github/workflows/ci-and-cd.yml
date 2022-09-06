@@ -102,8 +102,6 @@ jobs:
           # eslint-disable-next-line max-len
           vercel-args: --prod -b OWNER=${{ github.actor }} -b REPO=${{ github.event.repository.name }}
           working-directory: ./
-          alias-domains: |
-            qianx1.xyz
 
   deploy-to-gh-page:
     if: github.event_name != 'pull_request'
